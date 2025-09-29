@@ -122,3 +122,13 @@ SELECT name
 FROM Customer
 WHERE referee_id != 2 OR referee_id IS NULL;
 
+--------------------------------------------------------------------------------------------------
+
+Problem 6           Topic : Left Join               29-SEP-2025
+
+Write a solution to report the name and bonus amount of each employee with a bonus less than 1000
+
+SELECT  E.name, B.bonus
+FROM Employee E
+LEFT JOIN Bonus B ON E.empID = B.empID
+WHERE B.bonus < 1000 OR B.bonus IS NULL
