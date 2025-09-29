@@ -40,3 +40,12 @@ ORDER BY salary DESC: Sorts salaries from highest to lowest.
 LIMIT 1 OFFSET 1: Skips the highest salary (OFFSET 1) and returns the next one (LIMIT 1).
 
 --------------------------------------------------------------------------------------------------
+
+Problem 3         Topic - Conditional           29-SEP-2025
+
+
+SELECT name, population, area
+FROM World
+WHERE area >= 3000000 OR population >= 25000000;
+
+--------------------------------------------------------------------------------------------------
