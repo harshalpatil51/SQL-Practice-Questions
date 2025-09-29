@@ -106,3 +106,19 @@ Henry earns the highest salary in Sales (80000).
 Joe and Sam are not included because their salaries are not the highest in their departments.
 
 --------------------------------------------------------------------------------------------------
+
+Problem 5             Topic : Conditional               29-SEP-2025
+
+SELECT name
+FROM Customer
+WHERE id NOT IN (
+    SELECT id
+    FROM Customer
+    WHERE referee_id = 2
+) OR referee_id IS NULL;
+
+
+SELECT name
+FROM Customer
+WHERE referee_id != 2 OR referee_id IS NULL;
+
